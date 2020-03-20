@@ -2,7 +2,7 @@
 /server/volume/Dominions5/
 
 ### games except example
-/server/volume/dominions5/
+/server/volume/dominions5/*
 !/server/volume/dominions5/.gitkeep
 
 ### Emacs
