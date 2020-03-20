@@ -1,0 +1,18 @@
+### game copy
+/server/volume/Dominions5/
+
+### games except example
+/server/volume/dominions5/
+!/server/volume/dominions5/.gitkeep
+
+### Emacs
+*~
+.*~
+\#*\#
+.\#*
+
+### KDE
+.directory
+
+### macOS
+.DS_Store

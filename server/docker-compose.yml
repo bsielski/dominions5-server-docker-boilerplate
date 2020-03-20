@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+
+  dom5_server:
+    build:
+      context: ./context
+      args:
+        USER_ID: "${USER_ID}"
+        GROUP_ID: "${GROUP_ID}"
+    image: dom5_server
+    container_name: "${GAME_NAME}"
+    volumes:
+      - ./volume/Dominions5:/home/gamemaster/Dominions5
+      - ./volume/dominions5:/home/gamemaster/dominions5
+    ports:
+      - ${GAME_PORT}:${GAME_PORT}
+    command: ./Dominions5/dom5.sh "${GAME_NAME}" --port "${GAME_PORT}" ${GAME_OPTIONS} --statuspage ../dominions5/savedgames/"${GAME_NAME}"/status-"${GAME_NAME}".html -TS --nonationsel --noclientstart --hours "${HOURS}"

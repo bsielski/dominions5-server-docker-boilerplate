@@ -1,0 +1,2 @@
+HOURS=18
+GAME_OPTIONS="--era 2 --diffai 58 --thrones 3 2 1 --requiredap 5 --randmap 15"
